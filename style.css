@@ -1,0 +1,133 @@
+/* Grundlayout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050507;
+  color: #D4AF37;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #D4AF37;
+}
+
+.logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.intro h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Frequency Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #0A0A0C;
+  border: 1px solid #D4AF37;
+  border-radius: 8px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.card h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.freq {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.intention {
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.ritual {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #e0c878;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #D4AF37;
+}
+
+.qr {
+  max-width: 140px;
+  margin: 20px auto;
+  display: block;
+}
+
+.footer h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .intro h2 {
+    font-size: 1.3em;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+  }
+}

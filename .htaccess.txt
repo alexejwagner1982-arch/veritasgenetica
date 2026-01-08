@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "VERITAS GENETICA – Geschützter Bereich"
+AuthUserFile /home/initium2026/.htpasswd
+Require valid-user
