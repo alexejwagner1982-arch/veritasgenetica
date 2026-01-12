@@ -208,3 +208,19 @@ h1 {
     font-size: 1.2em;
   }
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
