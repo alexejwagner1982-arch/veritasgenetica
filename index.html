@@ -7,14 +7,17 @@
   <title>VERITAS GENETICA – Start</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <nav>
-    <a href="index.html">Start</a>
-    <a href="zugang.html">Zugang</a>
-    <a href="sorten.html">Sorten</a>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="zugang.html">Zugang</a></li>
+      <li><a href="sorten.html">Sorten</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
   </nav>
 
   <main>
@@ -24,8 +27,12 @@
   </main>
 
   <footer>
-    <p>© VERITAS GENETICA</p>
+    <p>© <span id="year"></span> VERITAS GENETICA</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
